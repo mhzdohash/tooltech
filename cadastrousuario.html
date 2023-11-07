@@ -49,16 +49,22 @@
 </head>
 <body>
     <div id="navbar">
-        <a href="index.html" style="float: left; margin-right: 20px; color: #fff; text-decoration: none;">Página Inicial</a>
+        <a href="index.html" style="float: left; margin-right: 20px; color: #fff; text-decoration: none;">ToolTech</a>
     </div>
     <div id="content">
         <h2>Faça login</h2>
-        <div id="login-form">
-            <form action="processar-login.php" method="post">
-                <input type="email" name="email" placeholder="Email" required>
-                <input type="password" name="senha" placeholder="Senha" required>
-                <button type="submit">Entrar</button>
-            </form>
+        <div class="container mt-5">
+            <form action="/cadastrousuario" method="post">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label for="Senha">Senha:</label>
+                    <input type="text" class="form-control" id="senha" name="senha" placeholder="Senha">
+                </div>
+                <button type="submit" class="btn btn-primary">Cadastrar</button>
+    </form>
         </div>
     </div>
 </body>
