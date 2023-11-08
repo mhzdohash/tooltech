@@ -101,6 +101,10 @@ app.get("/cadastrousuario", async(req, res)=>{
   res.sendFile(__dirname +"/cadastrousuario.html");
 })
 
+app.get("/", async(req, res)=>{
+  res.sendFile(__dirname +"/index.html");
+})
+
 // Configurando a porta
 app.listen(port, () => {
   console.log(`Servidor rodando na porta ${port}`);
